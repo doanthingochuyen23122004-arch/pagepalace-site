@@ -1,19 +1,9 @@
 import { useEffect, useRef } from "react";
 
-
 /**
  * FloatingWatermelons 🍉
  * - Rải các miếng dưa hấu động nhẹ trên nền section hoặc toàn trang.
- * - Dùng cho trang "Truyện Nhà Mèo" tạo cảm giác vui tươi, chill.
- *
- * 🔧 Props:
- *  count: số lượng dưa hấu (default: 20)
- *  sizes: mảng kích thước (px)
- *  image: đường dẫn ảnh (public hoặc import)
- *  intensity: độ mờ tổng thể (0–1)
- *  area: 'section' | 'page' → dùng toàn trang hay trong 1 vùng
  */
-
 export default function FloatingWatermelons({
   count = 20,
   sizes = [28, 36, 48, 60],
@@ -74,8 +64,8 @@ export default function FloatingWatermelons({
         } inset-0 overflow-hidden pointer-events-none -z-10`}
       />
 
-      {/* Animation keyframes */}
-      <style jsx>{`
+      {/* Animation keyframes ✅ (React-compatible) */}
+      <style>{`
         @keyframes melonFloat {
           0% {
             transform: translate(-50%, -50%) translateY(-8px) rotate(0deg);
@@ -87,7 +77,13 @@ export default function FloatingWatermelons({
             transform: translate(-50%, -50%) translateY(-8px) rotate(-10deg);
           }
         }
-
+        .melon {
+          transition: transform 0.3s ease;
+          filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.15));
+        }
+        .melon:hover {
+          transform: scale(1.2) rotate(15deg);
+        }
         @media (prefers-reduced-motion: reduce) {
           .melon {
             animation: none !important;

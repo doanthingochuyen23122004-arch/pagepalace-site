@@ -24,7 +24,6 @@ export default function App() {
           <div className="relative min-h-screen bg-[#f8fff5] overflow-hidden">
             {/* Nền dưa hấu toàn trang 🍉 */}
             <FloatingWatermelons count={30} area="page" />
-
             {/* Header */}
             <HeaderMeo />
 
