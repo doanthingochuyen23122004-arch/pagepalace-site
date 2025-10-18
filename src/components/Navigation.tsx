@@ -1,10 +1,11 @@
+import logoMeo from "@/assets/logo-meo.png";
 
 export default function HeaderMeo() { 
   return (
     <header className="w-full bg-white/80 backdrop-blur-sm border-b border-lime-100 px-8 py-4 flex items-center justify-between shadow-sm">
       {/* Logo */}
       <div className="flex items-center gap-2">
-        <img src="/logo.png" alt="Logo" className="w-8 h-8" />
+        <img src={logoMeo} alt="Logo Truyện Nhà Mèo" className="w-10 h-10 rounded-full shadow-sm" />
         <h1 className="text-lg font-semibold text-[#577b49] tracking-wide">
           TRUYỆN NHÀ MEO <span className="text-xl">🐾</span>
         </h1>
