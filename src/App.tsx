@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import HeaderMeo from "./HeaderMeo";
-import FloatingWatermelons from "./FloatingWatermelons";
+import FloatingWatermelons from "./components/FloatingWatermelons"; // ✅
 
 const queryClient = new QueryClient();
 
