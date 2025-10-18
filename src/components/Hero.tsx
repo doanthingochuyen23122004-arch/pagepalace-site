@@ -1,4 +1,4 @@
-import heroBackground from "@/assets/hình nền mèo chilljpg(1).jpg";
+import heroBackground from "@/assets/hinh-nen-meo-chill.jpg";
 
 const Hero = () => {
   return (
@@ -6,7 +6,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${heroBackground})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${heroBackground})`,
         }}
       />
 
