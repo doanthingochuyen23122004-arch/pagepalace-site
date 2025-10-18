@@ -1,4 +1,4 @@
-import heroBackground from "@/assets/hình nền mèo chill.jpg";
+import heroBackground from "@/assets/hình nền mèo chilljpg(1).jpg";
 
 const Hero = () => {
   return (
@@ -18,7 +18,7 @@ const Hero = () => {
           <br />
           tàng
           <br />
-          truyện
+          truyện 
           <br />
           hay
         </h2>
