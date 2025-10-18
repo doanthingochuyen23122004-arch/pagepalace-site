@@ -11,8 +11,7 @@ const Hero = () => {
         }}
       />
 
-      {/* Lớp phủ nhẹ phía trên */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#fffaf2]/40 to-transparent" />
+     
 
       {/* Nội dung chữ */}
       <div className="relative z-10 text-left px-8 md:px-20 py-20">
