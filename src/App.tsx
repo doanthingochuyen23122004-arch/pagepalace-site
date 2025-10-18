@@ -9,33 +9,32 @@ import NotFound from "./pages/NotFound";
 import HeaderMeo from "./HeaderMeo";
 import FloatingWatermelons from "./FloatingWatermelons";
 
-// ✅ Khởi tạo QueryClient chỉ 1 lần
 const queryClient = new QueryClient();
 
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        {/* Các tiện ích toàn cục */}
-        <Toaster />
-        <Sonner />
+        <BrowserRouter>
+          {/* Thông báo và tiện ích toàn cục */}
+          <Toaster />
+          <Sonner />
 
-        {/* Toàn bộ trang */}
-        <div className="relative min-h-screen bg-[#f8fff5] overflow-hidden">
-          {/* Nền dưa hấu toàn trang 🍉 */}
-          <FloatingWatermelons count={30} area="page" />
+          {/* Giao diện trang */}
+          <div className="relative min-h-screen bg-[#f8fff5] overflow-hidden">
+            {/* Nền dưa hấu toàn trang 🍉 */}
+            <FloatingWatermelons count={30} area="page" />
 
-          {/* Header */}
-          <HeaderMeo />
+            {/* Header */}
+            <HeaderMeo />
 
-          {/* Router chính */}
-          <BrowserRouter>
+            {/* Nội dung điều hướng */}
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
-          </BrowserRouter>
-        </div>
+          </div>
+        </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
   );
