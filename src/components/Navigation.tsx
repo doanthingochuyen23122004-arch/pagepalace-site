@@ -7,7 +7,7 @@ export default function HeaderMeo() {
       <div className="flex items-center gap-2">
         <img src={logoMeo} alt="Logo Truyện Nhà Mèo" className="w-10 h-10 rounded-full shadow-sm" />
         <h1 className="text-lg font-semibold text-[#577b49] tracking-wide">
-          TRUYỆN NHÀ MEO <span className="text-xl">🐾</span>
+          TRUYỆN NHÀ MEO <span className="text-xl inline-block"  style={{ filter: "hue-rotate(90deg) brightness(1.2)" }}>🐾</span>
         </h1>
       </div>
 
