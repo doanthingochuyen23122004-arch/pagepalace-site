@@ -1,9 +1,10 @@
+
 export default function HeaderMeo() { 
   return (
     <header className="w-full bg-white/80 backdrop-blur-sm border-b border-lime-100 px-8 py-4 flex items-center justify-between shadow-sm">
       {/* Logo */}
       <div className="flex items-center gap-2">
-        <img src="/logo-meo.png" alt="Logo" className="w-8 h-8" />
+        <img src="/logo.png" alt="Logo" className="w-8 h-8" />
         <h1 className="text-lg font-semibold text-[#577b49] tracking-wide">
           TRUYỆN NHÀ MEO <span className="text-xl">🐾</span>
         </h1>
@@ -11,7 +12,7 @@ export default function HeaderMeo() {
 
       {/* Navigation */}
       <nav className="hidden md:flex items-center gap-6 text-[#5e714c] font-medium">
-        {["Trang chủ", "Thể loại", "Đầu trang"].map((item) => (
+        {["trang chủ", "thể loại", "dấu trang"].map((item) => (
           <a
             key={item}
             href="#"
@@ -26,7 +27,7 @@ export default function HeaderMeo() {
         <div className="flex items-center border border-[#d2d8c7] bg-[#fafdf8] rounded-full px-3 py-1.5 transition-all duration-300 hover:border-[#a3c78a]">
           <input
             type="text"
-            placeholder="Tìm kiếm..."
+            placeholder="tìm kiếm..."
             className="bg-transparent outline-none text-sm text-[#4f6040] placeholder-[#9bb08a] w-32"
           />
           <button
