@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import { FloatingWatermelons } from "@/components/FloatingWatermelons"; // 🩷 thêm dòng này
 
 const queryClient = new QueryClient();
 
@@ -13,6 +14,10 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+
+      {/* 🍉 Nền dưa hấu bay - hiển thị xuyên suốt */}
+      <FloatingWatermelons />
+
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
