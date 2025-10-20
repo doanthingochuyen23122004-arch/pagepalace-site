@@ -39,10 +39,11 @@ const BookSection = ({ title, books }) => {
       </button>
 
       {/* Danh sách sách cuộn ngang */}
-     <motion.div
+    <motion.div
   ref={scrollRef}
   className="flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory px-4 sm:px-6 md:px-0 pb-2 -mx-4 sm:-mx-6 md:mx-0"
 >
+
         {books.map((book) => (
           <div
             key={book.id}
