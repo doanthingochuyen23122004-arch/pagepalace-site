@@ -100,7 +100,7 @@ const FeaturedBooks = () => {
     { id: 3, title: "Sinh ra là một bản thể", author: "John Mason", cover: book3 },
     { id: 4, title: "Hoa nở trên mây", author: "Lan Hương", cover: book1 },
     { id: 5, title: "Thành phố mờ ảo", author: "Lê Minh C", cover: book6 },
-    { id: 1, title: badge: "HOT 🔥", "Buông bỏ buồn buông", author: "Trần Thị B", cover: book2" },
+    { id: 1, badge: "HOT 🔥", title:  "Buông bỏ buồn buông", author: "Trần Thị B", cover: book2" },
     { id: 2, title: "Rừng Na-Uy", author: "Haruki Murakami", cover: book4 },
     { id: 3, title: "Sinh ra là một bản thể", author: "John Mason", cover: book3 },
     { id: 4, title: "Hoa nở trên mây", author: "Lan Hương", cover: book1 },
