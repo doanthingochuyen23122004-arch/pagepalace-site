@@ -1,49 +1,46 @@
 import { motion } from "framer-motion";
 
 export const FloatingWatermelons = () => {
-  const melons = Array.from({ length: 25 }, (_, i) => i);
-
-  // các emoji / hình dưa hấu khác nhau
-  const watermelonShapes = ["🍉", "🍈", "🍉", "🍉", "🍉🥭", "🍉🍈"];
+  const fruits = Array.from({ length: 25 }, (_, i) => i);
+  const fruitTypes = ["🍉", "🐱", "🌼"]; // dưa hấu, dâu, cà chua
 
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-      {melons.map((i) => {
-        const shape = watermelonShapes[i % watermelonShapes.length];
-        const startX = Math.random() * window.innerWidth;
-        const drift = 60 + Math.random() * 80; // độ lượn gió
-        const delay = Math.random() * 6;
-        const size = 2 + Math.random() * 2; // text-2xl đến text-4xl
-        const duration = 9 + Math.random() * 6;
+      {fruits.map((i) => {
+        // chia đều các vị trí ngang
+        const leftPercent =
+          (i / fruits.length) * 100 + (Math.random() * 4 - 2); // lệch nhẹ cho tự nhiên
+        const delay = Math.random() * 5;
+        const duration = 8 + Math.random() * 5;
+        const horizontalDrift = Math.random() * 200 - 100; // bay chéo sang trái/phải
 
         return (
           <motion.div
             key={i}
-            className="absolute select-none"
+            className="absolute text-5xl"
             initial={{
-              x: startX,
+              x: 0,
               y: -100,
-              opacity: 0,
               rotate: Math.random() * 360,
-              scale: 0.6 + Math.random() * 0.8,
+              opacity: 0,
             }}
             animate={{
-              y: window.innerHeight + 120,
-              x: [startX, startX + drift, startX - drift / 2, startX + drift],
-              rotate: [0, 360],
+              x: horizontalDrift,
+              y: window.innerHeight + 150,
+              rotate: 360 + Math.random() * 360,
               opacity: [0, 1, 1, 0],
             }}
             transition={{
               duration,
               delay,
               repeat: Infinity,
-              ease: "easeInOut",
+              ease: "linear",
             }}
             style={{
-              fontSize: `${size}rem`,
+              left: `${leftPercent}%`,
             }}
           >
-            {shape}
+            {fruitTypes[i % fruitTypes.length]}
           </motion.div>
         );
       })}
