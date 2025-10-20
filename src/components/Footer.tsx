@@ -58,12 +58,12 @@ export default function FooterAnimated() {
 
       {/* Mèo nằm ngủ */}
       <motion.img
-        src={sleepyCat}
-        alt="Mèo ngủ"
-        className="absolute bottom-0 right-10 w-32 md:w-40 opacity-90"
-        animate={{ y: [0, -3, 0] }}
-        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-      />
+  src={sleepyCat}
+  alt="Mèo ngủ"
+  className="absolute top-16 right-10 w-[220px] md:w-[320px] opacity-90"
+  animate={{ y: [0, -3, 0] }}
+  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+/>
 
       {/* Chữ bản quyền */}
       <div className="text-center text-sm py-4 border-t border-[#4a7145] bg-[#2e4d2c]/90 backdrop-blur-sm relative z-10">
