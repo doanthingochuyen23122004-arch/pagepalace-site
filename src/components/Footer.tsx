@@ -60,7 +60,7 @@ export default function FooterAnimated() {
       <motion.img
   src={sleepyCat}
   alt="Mèo ngủ"
-  className="absolute top-16 right-10 w-[220px] md:w-[320px] opacity-90"
+  className="absolute top-16 right-0 w-[220px] md:w-[320px] opacity-90"
   animate={{ y: [0, -3, 0] }}
   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
 />
