@@ -100,6 +100,11 @@ const FeaturedBooks = () => {
     { id: 3, title: "Sinh ra là một bản thể", author: "John Mason", cover: book3 },
     { id: 4, title: "Hoa nở trên mây", author: "Lan Hương", cover: book1 },
     { id: 5, title: "Thành phố mờ ảo", author: "Lê Minh C", cover: book6 },
+    { id: 1, title: "Buông bỏ buồn buông", author: "Trần Thị B", cover: book2, badge: "HOT 🔥" },
+    { id: 2, title: "Rừng Na-Uy", author: "Haruki Murakami", cover: book4 },
+    { id: 3, title: "Sinh ra là một bản thể", author: "John Mason", cover: book3 },
+    { id: 4, title: "Hoa nở trên mây", author: "Lan Hương", cover: book1 },
+    { id: 5, title: "Thành phố mờ ảo", author: "Lê Minh C", cover: book6 },
   ];
 
   const booksNew = [
@@ -108,6 +113,11 @@ const FeaturedBooks = () => {
     { id: 8, title: "Trăng trên đỉnh núi", author: "Hoàng Minh", cover: book1 },
     { id: 9, title: "Nơi ánh sáng không tắt", author: "Minh An", cover: book4 },
     { id: 10, title: "Buông bỏ buồn buông", author: "Trần Thị B", cover: book2, badge: "HOT 🔥" },
+    { id: 1, title: "Buông bỏ buồn buông", author: "Trần Thị B", cover: book2, badge: "HOT 🔥" },
+    { id: 2, title: "Rừng Na-Uy", author: "Haruki Murakami", cover: book4 },
+    { id: 3, title: "Sinh ra là một bản thể", author: "John Mason", cover: book3 },
+    { id: 4, title: "Hoa nở trên mây", author: "Lan Hương", cover: book1 },
+    { id: 5, title: "Thành phố mờ ảo", author: "Lê Minh C", cover: book6 },
   ];
 
   const booksLove = [
@@ -116,6 +126,11 @@ const FeaturedBooks = () => {
     { id: 13, title: "Nụ cười của em", author: "An Nhiên", cover: book3 },
     { id: 14, title: "Gió vẫn hát", author: "Yến Phương", cover: book2 },
     { id: 15, title: "Buông bỏ buồn buông", author: "Trần Thị B", cover: book2, badge: "HOT 🔥" },
+ { id: 1, title: "Buông bỏ buồn buông", author: "Trần Thị B", cover: book2, badge: "HOT 🔥" },
+    { id: 2, title: "Rừng Na-Uy", author: "Haruki Murakami", cover: book4 },
+    { id: 3, title: "Sinh ra là một bản thể", author: "John Mason", cover: book3 },
+    { id: 4, title: "Hoa nở trên mây", author: "Lan Hương", cover: book1 },
+    { id: 5, title: "Thành phố mờ ảo", author: "Lê Minh C", cover: book6 },
   ];
 
   const booksShort = [
@@ -124,6 +139,11 @@ const FeaturedBooks = () => {
     { id: 18, title: "Những mảnh ký ức", author: "Hoài Nam", cover: book3 },
     { id: 19, title: "Dòng sông yên bình", author: "Tú Anh", cover: book1 },
     { id: 20, title: "Thành phố mờ ảo", author: "Lê Minh C", cover: book6 },
+    { id: 1, title: "Buông bỏ buồn buông", author: "Trần Thị B", cover: book2, badge: "HOT 🔥" },
+    { id: 2, title: "Rừng Na-Uy", author: "Haruki Murakami", cover: book4 },
+    { id: 3, title: "Sinh ra là một bản thể", author: "John Mason", cover: book3 },
+    { id: 4, title: "Hoa nở trên mây", author: "Lan Hương", cover: book1 },
+    { id: 5, title: "Thành phố mờ ảo", author: "Lê Minh C", cover: book6 },
   ];
 
   return (
