@@ -39,10 +39,10 @@ const BookSection = ({ title, books }) => {
       </button>
 
       {/* Danh sách sách cuộn ngang */}
-      <motion.div
-        ref={scrollRef}
-        className="flex gap-5 overflow-x-auto scrollbar-hide scroll-smooth px-1 md:px-6 pb-2"
-      >
+     <motion.div
+  ref={scrollRef}
+  className="flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory px-4 sm:px-6 md:px-0 pb-2 -mx-4 sm:-mx-6 md:mx-0"
+>
         {books.map((book) => (
           <div
             key={book.id}
@@ -100,11 +100,7 @@ const FeaturedBooks = () => {
     { id: 3, title: "Sinh ra là một bản thể", author: "John Mason", cover: book3 },
     { id: 4, title: "Hoa nở trên mây", author: "Lan Hương", cover: book1 },
     { id: 5, title: "Thành phố mờ ảo", author: "Lê Minh C", cover: book6 },
-    { id: 1, title: "Buông bỏ buồn buông", author: "Trần Thị B", cover: book2, badge: "HOT 🔥" },
-    { id: 2, title: "Rừng Na-Uy", author: "Haruki Murakami", cover: book4 },
-    { id: 3, title: "Sinh ra là một bản thể", author: "John Mason", cover: book3 },
-    { id: 4, title: "Hoa nở trên mây", author: "Lan Hương", cover: book1 },
-    { id: 5, title: "Thành phố mờ ảo", author: "Lê Minh C", cover: book6 },
+
   ];
 
   const booksNew = [
@@ -139,11 +135,7 @@ const FeaturedBooks = () => {
     { id: 18, title: "Những mảnh ký ức", author: "Hoài Nam", cover: book3 },
     { id: 19, title: "Dòng sông yên bình", author: "Tú Anh", cover: book1 },
     { id: 20, title: "Thành phố mờ ảo", author: "Lê Minh C", cover: book6 },
-    { id: 1, title: "Buông bỏ buồn buông", author: "Trần Thị B", cover: book2, badge: "HOT 🔥" },
-    { id: 2, title: "Rừng Na-Uy", author: "Haruki Murakami", cover: book4 },
-    { id: 3, title: "Sinh ra là một bản thể", author: "John Mason", cover: book3 },
-    { id: 4, title: "Hoa nở trên mây", author: "Lan Hương", cover: book1 },
-    { id: 5, title: "Thành phố mờ ảo", author: "Lê Minh C", cover: book6 },
+
   ];
 
   return (
