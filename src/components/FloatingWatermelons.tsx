@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export const FloatingWatermelons = () => {
   const fruits = Array.from({ length: 25 }, (_, i) => i);
-  const fruitTypes = ["🍉", "🍃", "🍂"]; // dưa hấu, dâu, cà chua
+  const fruitTypes = [ "🍃","🍉", "🍃"]; // dưa hấu, dâu, cà chua
 
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
