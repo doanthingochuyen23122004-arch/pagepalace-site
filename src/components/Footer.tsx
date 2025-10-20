@@ -27,24 +27,7 @@ export default function FooterAnimated() {
       />
 
       <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-6 z-10 relative">
-        {/* Cột 1 */}
-        <div>
-          <h3 className="text-lg font-semibold mb-2">🐾 Truyện Nhà Meo</h3>
-          <p className="text-sm leading-relaxed text-gray-100">
-            Nơi chia sẻ những câu chuyện ấm áp, nhẹ nhàng và đầy cảm xúc dành cho mọi độc giả.
-          </p>
-        </div>
-
-        {/* Cột 2 */}
-        <div>
-          <h3 className="text-lg font-semibold mb-2">Liên kết nhanh</h3>
-          <ul className="space-y-1 text-sm">
-            <li><a href="/" className="hover:text-[#b6e7a3] transition">Trang chủ</a></li>
-            <li><a href="/the-loai" className="hover:text-[#b6e7a3] transition">Thể loại</a></li>
-            <li><a href="/dau-trang" className="hover:text-[#b6e7a3] transition">Dấu trang</a></li>
-          </ul>
-        </div>
-
+        
         {/* Cột 3 */}
         <div>
           <h3 className="text-lg font-semibold mb-2">Kết nối với Meo 🐱</h3>
@@ -54,13 +37,21 @@ export default function FooterAnimated() {
             <a href="mailto:contact@meostory.vn" aria-label="Email" className="hover:text-[#b6e7a3]"><Mail size={20} /></a>
           </div>
         </div>
+        {/* Cột 1 */}
+        <div>
+          <h3 className="text-lg font-semibold mb-2">🐾 Truyện Nhà Meo</h3>
+          <p className="text-sm leading-relaxed text-gray-100">
+            Nơi chia sẻ những câu chuyện ấm áp, nhẹ nhàng và đầy cảm xúc dành cho mọi độc giả.
+          </p>
+        </div>
+
       </div>
 
       {/* Mèo nằm ngủ */}
       <motion.img
   src={sleepyCat}
   alt="Mèo ngủ"
-  className="absolute top-16 right-0 w-[220px] md:w-[320px] opacity-90"
+  className="absolute top-10 right-0 w-[220px] md:w-[320px] opacity-90"
   animate={{ y: [0, -3, 0] }}
   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
 />
