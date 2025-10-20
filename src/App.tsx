@@ -5,7 +5,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import { FloatingWatermelons } from "@/components/FloatingWatermelons"; // 🩷 thêm dòng này
+import { FloatingWatermelons } from "@/components/FloatingWatermelons"; // 🍉 Nền dưa hấu bay
+import FooterAnimated from "@/components/Footer"; // 🐾 Footer hoạt hình mèo nằm thư giãn
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,9 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+
+      {/* 🐱 Footer mèo nằm thư giãn */}
+      <FooterAnimated />
     </TooltipProvider>
   </QueryClientProvider>
 );

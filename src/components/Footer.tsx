@@ -1,14 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Facebook, Instagram, Mail } from "lucide-react";
-
+import leaf from "@/assets/leaf.png";
 export default function FooterAnimated() {
   return (
     <footer className="relative overflow-hidden bg-[#d5e8c7] text-[#2f3e1f] mt-10 rounded-t-2xl shadow-inner">
       {/* Lá đung đưa */}
       <motion.img
         src="/assets/leaf.png"
-        alt="Lá cây"
+        alt="Lá"
         className="absolute top-0 left-8 w-10 opacity-70"
         animate={{ rotate: [0, 5, -5, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
@@ -16,7 +16,7 @@ export default function FooterAnimated() {
 
       <motion.img
         src="/assets/leaf.png"
-        alt="Lá cây"
+        alt="lá"
         className="absolute top-4 right-10 w-12 opacity-60"
         animate={{ rotate: [0, -4, 4, 0] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
@@ -55,7 +55,7 @@ export default function FooterAnimated() {
       {/* Mèo nằm ngủ */}
       <motion.img
         src="/assets/sleepy-cat.png"
-        alt="Mèo ngủ"
+        alt="Meo"
         className="absolute bottom-0 right-10 w-32 md:w-40 opacity-90"
         animate={{ y: [0, -3, 0] }}
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
