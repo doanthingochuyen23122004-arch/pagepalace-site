@@ -39,7 +39,7 @@ export default function FooterAnimated() {
         </div>
         {/* Cột 1 */}
         <div>
-          <h3 className="text-lg font-semibold mb-2">🐾 Truyện Nhà Meo</h3>
+          <h3 className="text-lg font-semibold mb-2"> Truyện Nhà Meo🐾 </h3>
           <p className="text-sm leading-relaxed text-gray-100">
             Nơi chia sẻ những câu chuyện ấm áp, nhẹ nhàng và đầy cảm xúc dành cho mọi độc giả.
           </p>
